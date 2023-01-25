@@ -1,0 +1,1312 @@
+{
+	"info": {
+		"_postman_id": "19937e4b-ae9d-4b0f-88ce-539155749c3f",
+		"name": "GoRest test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19403703"
+	},
+	"item": [
+		{
+			"name": "Get user (all users)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}"
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get user 404 Not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "{{URL}}users",
+							"host": [
+								"{{URL}}users"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 13:52:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "feature-policy",
+							"value": "camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'"
+						},
+						{
+							"key": "link",
+							"value": "</assets/application-b212522fc0700166db332c0be0e0e8da03bb17e1017883c28d6bac5e5abe72f8.css>; rel=preload; as=style; nopush"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "set-cookie",
+							"value": "_gorest_session=dbwzJE7cQFbjE50Tl0z0uEmliDYC3JVXf%2Bg7KPbgaXiHoEyJzA5kryr5jonan8ljz7iehbsvABCr40Xgs4ZljwoSdOe2S886LaH26PhLL%2FZwDPMQhDXQ8rozPd1%2BamcEsMzhHOTHgpQZqOHLIuLwoRVzBK2meFoW0zb5ST6j5PFWDbzFMLPdQvvtkGEO2SzFSQo7eQK4MXCe4Omuid7mgre8LSAOB9lP9qrIaR5bXoqHGtAClkQvwWpTstqLmKsRkOMYQWtdlN92xyJo6mgghqpSgqGatew%3D--16SjPjuYhUMmmNUX--dD6U1n4Sq%2FriK8ProvGwng%3D%3D; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-request-id",
+							"value": "275322a2-3311-408f-b315-748c8c6d8abd"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.019819"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=vc8zR43r3kJGMbQO%2FvxUEbWDuzoyjBK%2BHpOp9SM9yLV1m%2BQqjsP8bgdNyBlztZzv%2B8fMIAt216oJWqmKFOmYkL3XiPTOeu9o8B31SVvxN6A1cGRmgjfZGb3%2BHyFvfvA%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "78c00d541937a3c1-BTS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"utf-8\" />\n        <meta content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" name=\"viewport\" />\n        <link href=\"/favicon.ico\" rel=\"icon\" type=\"image/x-icon\" />\n        <title>Page Not Found | GO REST</title>\n        <meta name=\"csrf-param\" content=\"authenticity_token\" />\n        <meta name=\"csrf-token\" content=\"GKp1l1bxQCZw_NjMR2Z25Y08iQ6VbWjvCsE2h84CXJbET7sjb-xHJJ6vn9cOAtXqLBr8bYwrk5Bq_akhp9a33g\" />\n        <link rel=\"stylesheet\" href=\"/assets/application-b212522fc0700166db332c0be0e0e8da03bb17e1017883c28d6bac5e5abe72f8.css\" media=\"all\" data-turbolinks-track=\"reload\" />\n        <script src=\"/packs/js/application-3d361c652948a6caa881.js\" data-turbolinks-track=\"reload\" defer=\"defer\"></script>\n        <script async=\"true\" crossorigin=\"anonymous\" src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4930099895671899\"></script>\n        <script async=\"true\" src=\"https://www.googletagmanager.com/gtag/js?id=G-7KR6VNWHWS\"></script>\n        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7KR6VNWHWS');</script>\n    </head>\n    <body>\n        <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark sticky-top\">\n            <div class=\"container\">\n                <a class=\"navbar-brand\" href=\"/\">\n                    <i class=\"fas fa-exchange-alt\"></i> Go REST\n                </a>\n                <button aria-controls=\"AppNavBar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler\" data-bs-target=\"#AppNavBar\" data-bs-toggle=\"collapse\" type=\"button\">\n                    <span class=\"navbar-toggler-icon\"></span>\n                </button>\n                <div class=\"collapse navbar-collapse\" id=\"AppNavBar\">\n                    <ul class=\"navbar-nav ms-auto\">\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/chandamama-stories\">\n                                <i class=\"fas fa-cloud-moon\"></i> Chandamama Stories\n                            </a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/qa\">\n                                <i class=\"fas fa-life-ring\"></i> Help\n                            </a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/rest-console\">\n                                <i class=\"fab fa-linux\"></i> Rest Console\n                            </a>\n                        </li>\n                        <li class=\"nav-item dropdown\">\n                            <a aria-expanded=\"false\" class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" id=\"ToolsDropDown\" role=\"button\">\n                                <i class=\"fas fa-tools\"></i> Tools\n                            </a>\n                            <ul aria-labelledby=\"ToolsDropDown\" class=\"dropdown-menu\">\n                                <li class=\"\">\n                                    <a class=\"dropdown-item\" href=\"/tools/base64-encode-decode\">Base64 Encode/Decode</a>\n                                </li>\n                                <li class=\"\">\n                                    <a class=\"dropdown-item\" href=\"/tools/url-encode-decode\">Url Encode/Decode</a>\n                                </li>\n                                <li class=\"\">\n                                    <a class=\"dropdown-item\" href=\"/tools/gcode-translator\">G-Code Translator</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/consumer/login\">Login</a>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </nav>\n        <div class=\"container pt-3\">\n            <style type=\"text/css\">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style>\n            <div class=\"card text-white border-secondary bg-dark\">\n                <div class=\"card-header\">\n                    <h1 class=\"card-title text-warning\">\n                        <i class=\"fas fa-ghost text-white slide-right\"></i> HTTP: Not Found\n                    </h1>\n                </div>\n                <div class=\"card-body\">\n                    <h3 class=\"leaad code-text\">\n                        <code class=\"mb-3\">\n                            <span>this_page</span>.\n                            <em>not_found</em> = true\n                        </code>\n                    </h3>\n                    <p class=\"lead code-text\">\n                        <code class=\"mb-2\">\n                            <span>if</span>\n                            <b>you_spelt_it_wrong</b>\n                            <br />&nbsp;&nbsp;\n                            <span>try_again</span>\n                            <br />\n                        </code>\n                        <code class=\"mb-2\">\n                            <span>elsif \n                                <b>we_screwed_up</b>\n                            </span>\n                            <br />&nbsp;&nbsp;\n                            <em>print</em>\n                            <i>\"We're really sorry about that.\"</i>\n                            <br />\n                        </code>\n                        <code class=\"mb-2\">\n                            <span>end</span>\n                        </code>\n                        <code class=\"mb-2\">\n                            <span>redirect_to</span>\n                            <em>home_page</em>\n                        </code>\n                    </p>\n                </div>\n            </div>\n        </div>\n        <hr class=\"mt-5\" />\n        <div class=\"container\">\n            <div class=\"footer\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">&copy; Go Rest 2023</li>\n                    <li class=\"list-inline-item float-lg-end\">\n                        <a href=\"/privacy-policy\">Privacy Policy</a>\n                    </li>\n                    <li class=\"list-inline-item float-lg-end me-3\">\n                        <a href=\"/contact-us\">Contact Us</a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </body>\n</html>"
+				},
+				{
+					"name": "Get user OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jan 2023 16:03:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"2fd6fd8e0bc460e3c67f5a109759ff37\""
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "set-cookie",
+							"value": "_gorest_session=r6jwAsiIQtC3u9Lhezqgqs40tGg7xeuw8gWBjApyuhDZFBoG16srmAxzWInffQeufpmDcIEfSSXQVaAUWyaHgGcDInQtbIXFR%2FLb73HSX%2FffMgpiirhIR5gxADC4BxN%2B5Q6Hv9W%2FQ5ZQ3HMhOkSVN5B554Gt%2FiW1R4wSIOn3de%2F97CTp22MgO855wCVHDuRcKHhHs6VhhwdYhz05Acfxn4RCgMFN56sIFJqFaZz0U8msD8IqKe41XvJaKhK%2F0bPZ1xPHVNd%2F631FgPPX34AAWmfOaeTyWw0%3D--KmncK2d0gPjst9R5--mylY8GwnX1p5F%2F0N6vwFdg%3D%3D; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-links-current",
+							"value": "https://gorest.co.in/public/v2/users?page=1"
+						},
+						{
+							"key": "x-links-next",
+							"value": "https://gorest.co.in/public/v2/users?page=2"
+						},
+						{
+							"key": "x-links-previous",
+							"value": ""
+						},
+						{
+							"key": "x-pagination-limit",
+							"value": "10"
+						},
+						{
+							"key": "x-pagination-page",
+							"value": "1"
+						},
+						{
+							"key": "x-pagination-pages",
+							"value": "214"
+						},
+						{
+							"key": "x-pagination-total",
+							"value": "2138"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "90"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "89"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "1"
+						},
+						{
+							"key": "x-request-id",
+							"value": "d83dbf83-61bc-47a4-b360-bb05b03e3a20"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.069288"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6hTvtlz5%2BmZbDQmDiHyn9fyFxo0TgzEvfz97h%2Ft66qtU8l0R3nv1DMl23gVVZFkwOg%2FNPBQknUbyVfHzAg02yVMZGkgOEAa4hEoZ7RyeHSVR0SaW5Ou3Cm1zJNeqzE4%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "78e1c2638ef5a3be-BTS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 70963,\n        \"name\": \"John Doe\",\n        \"email\": \"pepa+3@ciklum.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 70909,\n        \"name\": \"John Doe\",\n        \"email\": \"pepa+2@ciklum.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 70784,\n        \"name\": \"John Doe\",\n        \"email\": \"pepa+1@ciklum.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 69535,\n        \"name\": \"John Doe\",\n        \"email\": \"pepa@ciklum.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 2909,\n        \"name\": \"Hamsini Marar\",\n        \"email\": \"marar_hamsini@fisher.info\",\n        \"gender\": \"female\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 2900,\n        \"name\": \"Miss Shresthi Kaul\",\n        \"email\": \"miss_shresthi_kaul@lang.org\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 2898,\n        \"name\": \"Niro Mishra III\",\n        \"email\": \"iii_mishra_niro@steuber-macgyver.name\",\n        \"gender\": \"male\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 2897,\n        \"name\": \"Lavanya Gupta\",\n        \"email\": \"gupta_lavanya@wiza-langworth.org\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 2896,\n        \"name\": \"Sarvin Chaturvedi\",\n        \"email\": \"sarvin_chaturvedi@zieme.biz\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 2895,\n        \"name\": \"Ujjwal Tandon PhD\",\n        \"email\": \"tandon_ujjwal_phd@gerhold.net\",\n        \"gender\": \"female\",\n        \"status\": \"inactive\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Post user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonResponse = pm.response.json();   // const →changed to→ var\r",
+							"pm.environment.set(\"USER_ID\", jsonResponse.id);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"{{NAME}}\",\r\n    \"gender\": \"{{GENDER}}\",\r\n    \"email\": \"{{EMAIL}}\",\r\n    \"status\": \"{{STATUS}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post user 404 Not Found",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{NAME}}\",\r\n    \"gender\": \"{{GENDER}}\",\r\n    \"email\": \"{{E-MAIL}}\",\r\n    \"status\": \"{{STATUS}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}users",
+							"host": [
+								"{{URL}}users"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 13:37:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "feature-policy",
+							"value": "camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'"
+						},
+						{
+							"key": "link",
+							"value": "</assets/application-b212522fc0700166db332c0be0e0e8da03bb17e1017883c28d6bac5e5abe72f8.css>; rel=preload; as=style; nopush"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-request-id",
+							"value": "58371b97-3dee-4da6-8df3-b01dfd3a7876"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.013928"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=WRCwl0g%2FUxOideFNfqPHmh6jFX1jBsE1LHZzwBdlv1wo5Ybgb13RO11SLAzy9SIo0nNEBATUN6EdVRcG5z50SKOBeBj9tOCvthbRIRQGv964tNdOoI5GC9OIACdEtv0%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "78bff7467bbda3c4-BTS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"utf-8\" />\n        <meta content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" name=\"viewport\" />\n        <link href=\"/favicon.ico\" rel=\"icon\" type=\"image/x-icon\" />\n        <title>Page Not Found | GO REST</title>\n        <link rel=\"stylesheet\" href=\"/assets/application-b212522fc0700166db332c0be0e0e8da03bb17e1017883c28d6bac5e5abe72f8.css\" media=\"all\" data-turbolinks-track=\"reload\" />\n        <script src=\"/packs/js/application-3d361c652948a6caa881.js\" data-turbolinks-track=\"reload\" defer=\"defer\"></script>\n        <script async=\"true\" crossorigin=\"anonymous\" src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4930099895671899\"></script>\n        <script async=\"true\" src=\"https://www.googletagmanager.com/gtag/js?id=G-7KR6VNWHWS\"></script>\n        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7KR6VNWHWS');</script>\n    </head>\n    <body>\n        <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark sticky-top\">\n            <div class=\"container\">\n                <a class=\"navbar-brand\" href=\"/\">\n                    <i class=\"fas fa-exchange-alt\"></i> Go REST\n                </a>\n                <button aria-controls=\"AppNavBar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler\" data-bs-target=\"#AppNavBar\" data-bs-toggle=\"collapse\" type=\"button\">\n                    <span class=\"navbar-toggler-icon\"></span>\n                </button>\n                <div class=\"collapse navbar-collapse\" id=\"AppNavBar\">\n                    <ul class=\"navbar-nav ms-auto\">\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/chandamama-stories\">\n                                <i class=\"fas fa-cloud-moon\"></i> Chandamama Stories\n                            </a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/qa\">\n                                <i class=\"fas fa-life-ring\"></i> Help\n                            </a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/rest-console\">\n                                <i class=\"fab fa-linux\"></i> Rest Console\n                            </a>\n                        </li>\n                        <li class=\"nav-item dropdown\">\n                            <a aria-expanded=\"false\" class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" id=\"ToolsDropDown\" role=\"button\">\n                                <i class=\"fas fa-tools\"></i> Tools\n                            </a>\n                            <ul aria-labelledby=\"ToolsDropDown\" class=\"dropdown-menu\">\n                                <li class=\"\">\n                                    <a class=\"dropdown-item\" href=\"/tools/base64-encode-decode\">Base64 Encode/Decode</a>\n                                </li>\n                                <li class=\"\">\n                                    <a class=\"dropdown-item\" href=\"/tools/url-encode-decode\">Url Encode/Decode</a>\n                                </li>\n                                <li class=\"\">\n                                    <a class=\"dropdown-item\" href=\"/tools/gcode-translator\">G-Code Translator</a>\n                                </li>\n                            </ul>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/consumer/login\">Login</a>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </nav>\n        <div class=\"container pt-3\">\n            <style type=\"text/css\">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style>\n            <div class=\"card text-white border-secondary bg-dark\">\n                <div class=\"card-header\">\n                    <h1 class=\"card-title text-warning\">\n                        <i class=\"fas fa-ghost text-white slide-right\"></i> HTTP: Not Found\n                    </h1>\n                </div>\n                <div class=\"card-body\">\n                    <h3 class=\"leaad code-text\">\n                        <code class=\"mb-3\">\n                            <span>this_page</span>.\n                            <em>not_found</em> = true\n                        </code>\n                    </h3>\n                    <p class=\"lead code-text\">\n                        <code class=\"mb-2\">\n                            <span>if</span>\n                            <b>you_spelt_it_wrong</b>\n                            <br />&nbsp;&nbsp;\n                            <span>try_again</span>\n                            <br />\n                        </code>\n                        <code class=\"mb-2\">\n                            <span>elsif \n                                <b>we_screwed_up</b>\n                            </span>\n                            <br />&nbsp;&nbsp;\n                            <em>print</em>\n                            <i>\"We're really sorry about that.\"</i>\n                            <br />\n                        </code>\n                        <code class=\"mb-2\">\n                            <span>end</span>\n                        </code>\n                        <code class=\"mb-2\">\n                            <span>redirect_to</span>\n                            <em>home_page</em>\n                        </code>\n                    </p>\n                </div>\n            </div>\n        </div>\n        <hr class=\"mt-5\" />\n        <div class=\"container\">\n            <div class=\"footer\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">&copy; Go Rest 2023</li>\n                    <li class=\"list-inline-item float-lg-end\">\n                        <a href=\"/privacy-policy\">Privacy Policy</a>\n                    </li>\n                    <li class=\"list-inline-item float-lg-end me-3\">\n                        <a href=\"/contact-us\">Contact Us</a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </body>\n</html>"
+				},
+				{
+					"name": "Post user 422 user already exists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{NAME}}\",\r\n    \"gender\": \"{{GENDER}}\",\r\n    \"email\": \"{{E-MAIL}}\",\r\n    \"status\": \"{{STATUS}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jan 2023 16:14:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "90"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "89"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "1"
+						},
+						{
+							"key": "x-request-id",
+							"value": "042582ae-79e1-4bec-ac0b-b85e1c953a64"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.093090"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=r1Hd9GENEZJZt0R9yRVyZx9iquBOGyzskQuHxcyY6pLkUjEpieeRr%2F5RZyWg1j6M71uuXnuQKgm2NgekCZaYA62HAGR%2FZJOErR17AOFaj5IFC86oEhlB5vdA4i6rFIY%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "78e1d3037ca5b389-PRG"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"field\": \"email\",\n        \"message\": \"has already been taken\"\n    }\n]"
+				},
+				{
+					"name": "Post user OK id=178619",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{NAME}}\",\r\n    \"gender\": \"{{GENDER}}\",\r\n    \"email\": \"blabla377@something.nn\",\r\n    \"status\": \"{{STATUS}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 24 Jan 2023 13:59:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"058af0facb801cf1cfa6173467607708\""
+						},
+						{
+							"key": "location",
+							"value": "https://gorest.co.in/public/v2/users/178619"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "90"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "89"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "1"
+						},
+						{
+							"key": "x-request-id",
+							"value": "0a0ba9f7-404b-45c5-8a11-b858ce474ae0"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.081526"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=c3DEclmmoRlariiSd7zXv%2F440Lf4ZBMYzZW9jVLqhuerMfcqON8h%2BRkSAa1%2Fqej6mcb0ZCqS7rVHbkDRKStIQtZGCqKUHriymgUN2rQNzqxYEAeCg7dClmE9o0VUeYU%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "78e94a5fdb6bf9d6-PRG"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 178619,\n    \"name\": \"John Doe\",\n    \"email\": \"blabla277@something.nn\",\n    \"gender\": \"male\",\n    \"status\": \"active\"\n}"
+				},
+				{
+					"name": "Post user OK id=185424",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{NAME}}\",\r\n    \"gender\": \"{{GENDER}}\",\r\n    \"email\": \"blabla567@something.nn\",\r\n    \"status\": \"{{STATUS}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Jan 2023 06:39:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"00ba9da0b598b96cc4c866dec72aa71c\""
+						},
+						{
+							"key": "location",
+							"value": "https://gorest.co.in/public/v2/users/185424"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "90"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "89"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "1"
+						},
+						{
+							"key": "x-request-id",
+							"value": "6db73ab0-4705-4b85-96c8-543f63882a69"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.086250"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=xA85Iyp6UEFbPHj6IH631yo5PoahrUx2HaMdtQigCKONzX2SEH7meABKQaPuSW5H1zyVoTFrAQV5q5uoWE%2BT36jDKqDwaqD9qX0T9FJNO8EvnlHa%2F8KkK%2ByGd5r5B1w%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "78ef0351eae0a3c9-BTS"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 185424,\n    \"name\": \"John Doe\",\n    \"email\": \"blabla567@something.nn\",\n    \"gender\": \"male\",\n    \"status\": \"active\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get user with USER_ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json(); \r",
+							"pm.test(\"Verify user ID\", function () { \r",
+							"        pm.expect(jsonData[0].id).is.to.equal(pm.environment.get(\"USER_ID\"));\r",
+							"    });\r",
+							"\r",
+							"pm.test(\"Verify name\", function () { \r",
+							"        pm.expect(jsonData[0].name).is.to.equal(pm.environment.get(\"NAME\")); \r",
+							"    });\r",
+							"\r",
+							"pm.test(\"Verify email\", function () { \r",
+							"        pm.expect(jsonData[0].email).is.to.equal(pm.environment.get(\"EMAIL\")); \r",
+							"    });\r",
+							"\r",
+							"pm.test(\"Verify gender\", function () { \r",
+							"        pm.expect(jsonData[0].gender).is.to.equal(pm.environment.get(\"GENDER\")); \r",
+							"    });\r",
+							"\r",
+							"pm.test(\"Verify email\", function () { \r",
+							"        pm.expect(jsonData[0].status).is.to.equal(pm.environment.get(\"STATUS\"));\r",
+							"    });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"{{USER_ID}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT name for USER_ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"{{NAME_UPDATE}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/{{USER_ID}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"{{USER_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify name change for USER_ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json(); \r",
+							"pm.test(\"Verify name\", function () { \r",
+							"         pm.expect(jsonData[0].name).is.to.equal(pm.environment.get(\"NAME_UPDATE\"));\r",
+							"    });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"{{USER_ID}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "verified OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"{{USER_ID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Jan 2023 09:18:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"088f957f93d84ff32b01e6df24a10c83\""
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-links-current",
+							"value": "https://gorest.co.in/public/v2/users?page=1"
+						},
+						{
+							"key": "x-links-next",
+							"value": ""
+						},
+						{
+							"key": "x-links-previous",
+							"value": ""
+						},
+						{
+							"key": "x-pagination-limit",
+							"value": "10"
+						},
+						{
+							"key": "x-pagination-page",
+							"value": "1"
+						},
+						{
+							"key": "x-pagination-pages",
+							"value": "1"
+						},
+						{
+							"key": "x-pagination-total",
+							"value": "1"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "90"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "89"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "1"
+						},
+						{
+							"key": "x-request-id",
+							"value": "3507ae7d-c009-4fe6-bef4-1bf672f55378"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.083199"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=uon1YIffIT5kYkieMZ0o7PbLxa6vMPafhc9d9pRwnTRY2GGWDv63K8GdYw%2BgChxD8k8mzw12F5pzyxXPle52COubKB3xT26h5Amn4tYWASlVmA9%2FFVgegzf%2FWv7ki0w%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "78efebd6c9e0277c-PRG"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 185529,\n        \"name\": \"Santa Claus\",\n        \"email\": \"example23@something.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "REMOVE user with USER_ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"User has been removed\", function () {\r",
+							"        (responseBody==null || responseBody.length==0)\r",
+							"    });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/{{USER_ID}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"{{USER_ID}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "b4b6666cabd1953a01afbab7df0d0993e4577cb14ab7e7d89ab95695e2273dd8",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "https://gorest.co.in/public/v2/",
+			"type": "string"
+		},
+		{
+			"key": "NAME",
+			"value": "John Doe",
+			"type": "string"
+		},
+		{
+			"key": "EMAIL",
+			"value": "example23@something.com",
+			"type": "string"
+		},
+		{
+			"key": "GENDER",
+			"value": "male",
+			"type": "string"
+		},
+		{
+			"key": "STATUS",
+			"value": "active",
+			"type": "string"
+		},
+		{
+			"key": "TOKEN",
+			"value": "58c7d425aa14a445a9cd53b1407e3cff7bd31d0c49f793c92f265d8aa229a9e0",
+			"type": "string"
+		},
+		{
+			"key": "USER_ID",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "NAME_UPDATE",
+			"value": "Santa Claus",
+			"type": "string"
+		}
+	]
+}
